@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F2108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlR-wY-wzb">
+                                <rect key="frame" x="269" y="255" width="51" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="MrT-zQ-A7f"/>
+                                    <constraint firstAttribute="width" constant="200" id="nDC-8u-EGb"/>
+                                </constraints>
+                                <state key="normal" title="打开相机"/>
+                                <connections>
+                                    <action selector="openAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uqd-Vi-Zwm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VO-VX-DzV">
+                                <rect key="frame" x="278" y="372" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7VF-9f-qjo"/>
+                                    <constraint firstAttribute="width" constant="150" id="zak-wd-u95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvO-4w-XFt">
+                                <rect key="frame" x="278" y="423" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ava-xS-fg7"/>
+                                    <constraint firstAttribute="width" constant="150" id="gIz-qT-kcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CvO-4w-XFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BUA-se-ULl"/>
+                            <constraint firstItem="wlR-wY-wzb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RL2-ZJ-ORA"/>
+                            <constraint firstItem="wlR-wY-wzb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X0o-6l-G30"/>
+                            <constraint firstItem="9VO-VX-DzV" firstAttribute="top" secondItem="wlR-wY-wzb" secondAttribute="bottom" constant="27" id="cCI-QG-Vaq"/>
+                            <constraint firstItem="CvO-4w-XFt" firstAttribute="top" secondItem="9VO-VX-DzV" secondAttribute="bottom" constant="30" id="sXo-9a-Goj"/>
+                            <constraint firstItem="9VO-VX-DzV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vNh-CE-hvN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cpuLabel" destination="9VO-VX-DzV" id="etV-39-KDo"/>
+                        <outlet property="memLabel" destination="CvO-4w-XFt" id="twF-rI-rYf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="201"/>
+        </scene>
+    </scenes>
+</document>
